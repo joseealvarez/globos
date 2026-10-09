@@ -17,7 +17,7 @@ class Globo
 
   void dibujate()
   {
-      triangle(x,y,50,60,79,199);
+      square(x,y,5);
   }
   
 }

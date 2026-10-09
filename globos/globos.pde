@@ -1,3 +1,4 @@
+PImage cara;
 class Globo
 {
   color c;
@@ -8,9 +9,7 @@ class Globo
    y=_y; 
    vx=random(-0.25,0.25);
    vy=random(-2,-0.5);
-   c = color(random(100,255),
-             random(100,255),
-             random(0,255));
+   c = color(random(100,255), random(100,255), random(0,255));
   }
 
   void update()
@@ -22,7 +21,9 @@ class Globo
   void dibujate()
   {
       fill(c);
-      ellipse(x,y,10,20);
+      strokeWeight(3);
+      ellipse(x,y,100,200);
+      image(cara,x,y);
   }
   
 }
@@ -32,8 +33,9 @@ ArrayList<Globo> globos;
 
 void setup()
 {
-  size(640,480);
+  size(1902,1080);
   globos = new ArrayList<Globo>();  
+  cara = loadImage("Captura 2026-10-09 a las 11.50.16.png");
 }
 
 void draw()

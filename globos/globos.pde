@@ -22,7 +22,7 @@ class Globo
   void dibujate()
   {
       fill(c);
-      circle(x,y,100);
+      ellipse(x,y,10,20);
   }
   
 }

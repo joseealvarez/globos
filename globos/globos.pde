@@ -36,7 +36,7 @@ void setup()
 {
   size(1902,1080);
   globos = new ArrayList<Globo>();  
-  cara = loadImage("Captura 2026-10-09 a las 11.50.16.png");
+  cara = loadImage("images.jpeg");
 }
 
 void draw()

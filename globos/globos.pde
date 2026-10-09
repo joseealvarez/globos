@@ -1,5 +1,6 @@
 class Globo
 {
+  color c;
   float x, y,vx,vy;
   Globo (float _x, float _y)
   {
@@ -7,6 +8,9 @@ class Globo
    y=_y; 
    vx=random(-0.25,0.25);
    vy=random(-2,-0.5);
+   c = color(random(100,255),
+             random(100,255),
+             random(0,255));
   }
 
   void update()
@@ -17,7 +21,8 @@ class Globo
 
   void dibujate()
   {
-      square(x,y,5);
+      fill(c);
+      circle(x,y,100);
   }
   
 }

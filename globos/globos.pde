@@ -1,3 +1,4 @@
+PImage cara;
 class Globo
 {
   color c;
@@ -8,9 +9,7 @@ class Globo
    y=_y; 
    vx=random(-0.25,0.25);
    vy=random(-2,-0.5);
-   c = color(random(100,255),
-             random(100,255),
-             random(0,255));
+   c = color(random(100,255), random(100,255), random(0,255));
   }
 
   void update()
@@ -23,8 +22,10 @@ class Globo
   {
       fill(c);
       strokeWeight(3);
-      ellipse(x,y,70,100);
-      triangle(x,y+50, x-10,y+60, x+10, y+60);
+      triangle(x,y+50, x-10,y+70, x+10, y+70);
+      ellipse(x,y,80,120);
+      imageMode(CENTER);
+      image(cara,x,y,50,70);
   }
   
 }
@@ -34,8 +35,9 @@ ArrayList<Globo> globos;
 
 void setup()
 {
-  size(640,480);
+  size(1902,1080);
   globos = new ArrayList<Globo>();  
+  cara = loadImage("images.jpeg");
 }
 
 void draw()

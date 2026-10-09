@@ -7,4 +7,4 @@ Grado Ing. Sistemas de Teleco
 
 Este curso es la primera vez que lo vemos en GIST
 
-Cambio hecho por Eba
+Cambio hecho por Eva
